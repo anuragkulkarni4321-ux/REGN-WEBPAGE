@@ -93,6 +93,29 @@
         footer a {
             margin-right: 20px;
         }
+
+        /* ---------- Maintenance notice ---------- */
+        .maintenance-notice {
+            background: var(--ember-soft);
+            border-bottom: 1px solid var(--ember);
+            padding: 22px 0;
+        }
+
+        .maintenance-notice h2 {
+            color: var(--ember);
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        .maintenance-notice p {
+            color: var(--text);
+            max-width: 80ch;
+            font-size: 15px;
+        }
+
+        .maintenance-notice p+p {
+            margin-top: 6px;
+        }
     </style>
 
 </head>
@@ -100,6 +123,18 @@
 <body>
 
     <a href="index.html" class="logo">REGN</a>
+    <aside id="maintenance-notice" class="maintenance-notice" aria-labelledby="maintenance-title">
+        <div class="container">
+            <h2 id="maintenance-title">Scheduled maintenance</h2>
+            <p><strong><time datetime="2026-10-16T23:00:00+05:30">16 October, 11:00 PM</time> to <time
+                        datetime="2026-10-17T01:00:00+05:30">17 October, 1:00 AM</time> IST</strong></p>
+            <p>We will be performing maintenance and testing during this window. Strava services in REGN will be
+                unavailable.
+                REGN's built-in GPS system will remain available, so you can continue recording your runs with REGN GPS.
+            </p>
+            <p>Thank you for your patience.</p>
+        </div>
+    </aside>
 
     <h1>Terms of Service</h1>
 
